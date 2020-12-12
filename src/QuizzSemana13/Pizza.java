@@ -37,7 +37,7 @@ public class Pizza {
 
    public float costoPizza(Ingrediente ingrediente,Ingrediente ingrediente2,Ingrediente ingrediente3){
    float resultado = 0;
-   resultado = (ingrediente.getPrecio()+ingrediente2.getPrecio()+ingrediente3.getPrecio())*3;
+   resultado = (ingrediente.getPrecio()+ingrediente2.getPrecio()+ingrediente3.getPrecio())*0.30f;
    return resultado;
    }
    
