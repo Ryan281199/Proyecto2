@@ -18,6 +18,6 @@ public class Tester {
       Ingrediente ing3 = new Ingrediente("Pepperoni",3, 100);
       Pizza pi = new Pizza();
       
-      pi.costoPizza(ing3, ing2, ing3);
+      System.out.println(pi.costoPizza(ing3, ing2, ing3));
 }     
 }
