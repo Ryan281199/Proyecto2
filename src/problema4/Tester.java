@@ -12,38 +12,39 @@ import java.util.Scanner;
  * @author Win10
  */
 public class Tester {
-    
-    public static void main(String[]args){
-    
-    Scanner entrada = new Scanner(System.in);
-    int [] a = new int [5];
-    
-    for(int i=0; i<5; i++){ 
-    System.out.print("Digite el numero del espacio "+(i+1)+": ");
-    a[i] = entrada.nextInt();
-    }
-         
-    int nDeseado;
-    int posIni = 0;
-    int posFin = a.length-1;
-    int posCen;
-    
-    System.out.println("Cual es el numero que desea buscar: ");
-    nDeseado = entrada.nextInt();
-    
-    while(posIni<=posFin){
-    posCen = (posIni+posFin)/2;
-    if(a[posCen]==nDeseado){
-    System.out.println("Numero encontrado en la posicion: "+posCen);
-    break;
-    }
-    else if(nDeseado<a[posCen]){
-    posFin = posCen-1;
-    }
-    else{
-    posIni = posCen+1;
-    }
-    }
+
+    public static void main(String[] args) {
+
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.print("Digite la cantidad de numeros que quiere en el arreglo: ");
+        int nElementos = entrada.nextInt();
+        int[] a = new int[nElementos];
+
+        for (int i = 0; i < nElementos; i++) {
+            System.out.print("Digite el numero del espacio " + (i + 1) + ": ");
+            a[i] = entrada.nextInt();
+        }
+
+        int nDeseado;
+        int posIni = 0;
+        int posFin = a.length - 1;
+        int posCen;
+
+        System.out.println("Cual es el numero que desea buscar: ");
+        nDeseado = entrada.nextInt();
+
+        while (posIni <= posFin) {
+            posCen = (posIni + posFin) / 2;
+            if (a[posCen] == nDeseado) {
+                System.out.println("Numero encontrado en la posicion: " + posCen);
+                break;
+            } else if (nDeseado < a[posCen]) {
+                posFin = posCen - 1;
+            } else {
+                posIni = posCen + 1;
+            }
+        }
     }
 
 }
