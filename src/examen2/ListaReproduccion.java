@@ -42,6 +42,12 @@ public class ListaReproduccion {
         }
     }
 
+    public void reproducirAleatorio(){
+      for (int i = 0; i < 1000; i++) {
+            System.out.println("Reproduciendo: " + listaAudios[i]);
+        }   
+    }
+    
     public boolean eliminarAudio() {
         boolean resultado = false;
         if (contAud != 0) {
