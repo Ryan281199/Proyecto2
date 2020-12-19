@@ -17,7 +17,6 @@ String emisora;
         this.emisora = emisora;
     }
 
-
     public String getEmisora() {
         return emisora;
     }

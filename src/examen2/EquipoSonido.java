@@ -11,6 +11,7 @@ package examen2;
  */
 public class EquipoSonido {
     
-String parlante;
+Parlante parlante;
 Reloj reloj;
+
 }
