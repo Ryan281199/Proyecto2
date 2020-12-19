@@ -42,7 +42,7 @@ public class EquipoSonido {
                 break;
             case 3:
                 for (int i = 0; i < 1000; i++) {
-                    if (listaAudios[i].equals(contAud) == false) {
+                    if (listaAudios[i].equals("") == false) {
                         System.out.println(listaAudios[i]);
                     }
                 }
@@ -60,7 +60,7 @@ public class EquipoSonido {
         }
     }
 
-    public void eleginOpcion(int res){
+    public void elegirOpcion(int res){
     Scanner entrada = new Scanner(System.in);    
     System.out.println("Cual opcion desea usar: "+"\n"
     +"1 para radio\n"

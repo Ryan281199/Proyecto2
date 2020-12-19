@@ -21,6 +21,10 @@ public class Reloj {
         this.minutos = minutos;
     }
 
+    public void definirHora(int hora,int minutos){
+        
+    }
+    
     public int getAlarma() {
         return alarma;
     }
