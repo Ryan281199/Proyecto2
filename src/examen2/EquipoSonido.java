@@ -15,6 +15,7 @@ public class EquipoSonido {
 
     Parlante parlante;
     Reloj reloj;
+    Radio radio;
     int maxCanciones = 1000;
     String[] listaAudios = new String[maxCanciones];
     int contAud = 0;
@@ -59,6 +60,20 @@ public class EquipoSonido {
         }
     }
 
+    public void eleginOpcion(int res){
+    Scanner entrada = new Scanner(System.in);    
+    System.out.println("Cual opcion desea usar: "+"\n"
+    +"1 para radio\n"
+    +"2 para lista de reproduccion");
+    if(res==1){
+    System.out.println("Reproduciendo la emisora: "+ radio.getEmisora());
+    }
+    else{
+    System.out.println();
+    }
+    }
+    
+    
     public EquipoSonido(Parlante parlante, Reloj reloj) {
         this.parlante = parlante;
         this.reloj = reloj;

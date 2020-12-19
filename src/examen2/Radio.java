@@ -11,12 +11,22 @@ package examen2;
  */
 public class Radio {
     
-String emisora;
+String emisora = "Sabor 2.0";
 
     public Radio(String emisora) {
         this.emisora = emisora;
     }
 
+    public void Encender(){
+    boolean encendido=true;
+    if(encendido){
+    System.out.println("La radio esta encendida");
+    } 
+    else{
+    System.out.println("La radio esta apagada");
+    }
+    }
+    
     public String getEmisora() {
         return emisora;
     }

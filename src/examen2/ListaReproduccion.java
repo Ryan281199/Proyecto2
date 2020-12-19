@@ -18,10 +18,10 @@ public class ListaReproduccion {
     public ListaReproduccion() {
     }
 
-    public boolean agregarAudio() {
+    public boolean agregarAudio(String aud) {
         boolean resultado = false;
         if (contAud < maxCanciones) {
-            //listaAudios[contAud];
+            listaAudios[contAud]=aud;
             contAud++;
             resultado = true;
         }

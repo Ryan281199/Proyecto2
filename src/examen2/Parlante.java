@@ -34,6 +34,20 @@ String musica;
     }
     }
     
+    public void habilitarParlante(int res){
+    Scanner entrada = new Scanner(System.in);
+    System.out.println("Desea usar el parlante?"+"\n"
+    +"1 para si\n"
+    +"2 para no");
+    res = entrada.nextInt();
+    if(res==1){
+    System.out.println("El parlante esta en uso");
+    }
+    else{
+    System.out.println("El parlante no esta en uso");
+    }
+    }
+    
     public int getVolumen() {
         return volumen;
     }
