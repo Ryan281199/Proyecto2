@@ -12,7 +12,7 @@ import java.util.Scanner;
  * @author Win10
  */
 public class Estudiante {
-    
+
     PadreFamiliar madre;
     PadreFamiliar padre;
     String nombre;
@@ -104,5 +104,10 @@ public class Estudiante {
     public void setMadre(PadreFamiliar madre) {
         this.madre = madre;
     }
-    
+
+    @Override
+    public String toString() {
+        return "Estudiante{" + "nombre=" + nombre + ", apellido=" + apellido + ", carnet=" + carnet + '}';
+    }
+
 }

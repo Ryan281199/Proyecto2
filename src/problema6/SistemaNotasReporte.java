@@ -16,6 +16,15 @@ public class SistemaNotasReporte {
     PadreFamiliar pf;
     
     public void reporteExamenes(){
-    System.out.println();
+    System.out.println(nota);
+    }
+    
+    public void reporteAlumnos(){
+    System.out.println(estudiante);
+    }
+    
+    public void reporteAlumnosPadres(){
+    System.out.println(estudiante);
+    System.out.println(pf);
     }
 }
